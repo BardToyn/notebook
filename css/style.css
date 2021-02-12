@@ -1,0 +1,483 @@
+@font-face {
+    font-family: Lato-Bold;
+    src: url(../font/Lato-Bold.ttf);
+}
+@font-face {
+    font-family: Lato-Light;
+    src: url(../font/Lato-Light.ttf);
+}
+@font-face {
+    font-family: Lato-Regular;
+    src: url(../font/Lato-Regular.ttf);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Шапка*/
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 550px;
+    width: 100%;
+    background-image: url(../img/layer1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/*Навигация*/
+
+.header-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 120px;
+    width: 100%;
+}
+
+.nav-logo {
+    font-size: 48px;
+    font-family: "Lato-Light";
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+}
+
+.nav-list-item {
+    margin: 0 15px;
+}
+
+.nav-list-item-link {
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "Lato-Regular";
+    color: rgb(233, 238, 242);
+    font-weight: bold;
+}
+
+.nav-list-item-link:hover {
+    color: #2d3035;
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    width: auto;
+    margin: 50px 0px;
+}
+
+.header-text-heading {
+    font-size: 38px;
+    font-family: "Lato-Bold";
+    color: rgb(255, 255, 255);
+}
+
+.header-text-text {
+    width: 70%;
+    margin: 60px 0px;
+    text-align: center;
+    font-size: 21px;
+    font-family: "Lato-Regular";
+    color: rgb(255, 255, 255);
+}
+
+.header-text-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    background-color: rgb(164, 185, 190);
+    width: 251px;
+    height: 61px;   
+    font-size: 21px;
+    font-family: "Lato-Regular";
+    color: rgb(255, 255, 255); 
+}
+
+/*Блок-Описания*/
+
+.description-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 460px;
+    width: 100%;
+    padding: 80px 10% 90px 10%;
+}
+
+.description-block-heading {
+    text-align: center;
+    font-size: 38px;
+    font-family: "Lato-Bold";
+    color: rgb(83, 90, 94);   
+}
+
+.description-block-text {
+    width: 76%;
+    margin: 20px 0px 60px 0px;
+    text-align: center;
+    font-size: 16px;
+    font-family: "Lato-Regular";
+    color: rgb(159, 164, 167);   
+}
+
+/*Слайд-Шоу*/
+
+.slideshow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 70px 5% 0 5%;
+    background-color: #a4b9be;
+}
+
+.slideshow-header {
+    font-size: 38px;
+    font-family: "Lato-Bold";
+    color: rgb(241, 241, 241);  
+}
+
+.slideshow-text {
+    width: 50%;
+    padding: 45px 0;
+    text-align: center;
+    font-size: 21px;
+    font-family: "Lato-Regular";
+    color: rgb(255, 255, 255); 
+}
+
+.slideshow-img {
+    width: 100%;
+    max-width: 760px;
+    height: auto;
+}
+
+/*Ценообразование*/
+
+.pricing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 0;
+}
+
+.pricing-header {
+    text-align: center;
+    font-size: 30px;
+    font-family: "Lato-Bold";
+    color: rgb(83, 90, 94);   
+}
+
+.pricing-text {
+    width: 40%;
+    margin: 45px 0;
+    text-align: center;
+    font-size: 21px;
+    font-family: "Lato-Light";
+    color: rgb(152, 160, 165);
+}
+
+.pricing-pack {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.pricing-list {
+    list-style: none;
+    margin: 0 20px;
+}
+
+/*БЕСПЛАТНЫЙ ПАКЕТ*/
+
+.pricing-free-item-grey {
+    padding: 30px 60px;
+    background-color: rgb(83, 90, 94);
+}
+
+.free-item-heading {
+    font-size: 30px;
+    font-family: "Lato-Light";
+    color: rgb(233, 238, 242);
+    text-align: center; 
+}
+
+.free-item-price {
+    font-family: "Lato-Regular";
+}
+
+.pricing-free-item {
+    padding: 30px 60px;
+    font-size: 21px;
+    font-family: "Lato-Light";
+    background-color: #e9eef2;
+    color: rgb(83, 90, 94);
+    text-align: center; 
+}
+
+.pricing-free-item-button {
+    margin: 20px 0 35px 0;
+}
+
+.pricing-free-button {
+    padding: 30px 120px;
+    font-size: 18px;
+    font-family: "Lato-Light";
+    background-color: rgb(83, 90, 94);
+    color: rgb(233, 238, 242);
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+/*ПРОФЕССИОНАЛЬНЫЙ ПАКЕТ*/
+
+.pricing-professional-item-green {
+    padding: 20px 60px;
+    background-color: rgb(88, 173, 82); 
+}
+
+.professional-item-heading {
+    font-size: 30px;
+    font-family: "Lato-Light";
+    color: rgb(233, 238, 242);
+    text-align: center; 
+}
+
+.prof-head-min {
+    font-size: 15px;
+    font-family: "Lato-Light";
+    color: rgb(233, 238, 242);
+    text-align: center; 
+}
+
+.professional-item-price {
+    font-family: "Lato-Regular";
+}
+
+.pricing-professional-item {
+    padding: 30px 60px;
+    font-size: 21px;
+    font-family: "Lato-Light";
+    background-color: rgb(223, 235, 223);
+    color: rgb(83, 90, 94);
+    text-align: center; 
+}
+
+.pricing-professional-item-button {
+    margin: 20px 0 35px 0;
+}
+
+.pricing-professional-button {
+    padding: 30px 120px;
+    font-size: 18px;
+    font-family: "Lato-Light";
+    background-color: rgb(88, 173, 82); 
+    color: rgb(233, 238, 242);
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+/*ПРЕДПРИЯТИЕ ПАКЕТ*/
+
+.pricing-enterprise-item-blue {
+    padding: 29px 60px;
+    background-color: #53a1ad; 
+}
+
+.enterprise-item-heading {
+    font-size: 30px;
+    font-family: "Lato-Light";
+    color: rgb(233, 238, 242);
+    text-align: center; 
+}
+
+.enterprise-item-price {
+    font-family: "Lato-Regular";
+}
+
+.pricing-enterprise-item {
+    padding: 30px 60px;
+    font-size: 21px;
+    font-family: "Lato-Light";
+    background-color: #dee9eb;
+    color: rgb(83, 90, 94);
+    text-align: center; 
+}
+
+.pricing-enterprise-item-button {
+    margin: 20px 0 35px 0;
+}
+
+.pricing-enterprise-button {
+    padding: 30px 120px;
+    font-size: 18px;
+    font-family: "Lato-Light";
+    background-color: #53a1ad; 
+    color: rgb(233, 238, 242);
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.pricing-text-bottom {
+    width: 23%;
+    font-size: 15px;
+    font-family: "Lato-Light";
+    color: rgb(152, 160, 165);
+    text-align: center;    
+}
+
+/*СВЯЗЬ*/
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #2d3035;
+}
+
+.contact-heading {
+    margin: 80px 0 25px 0;
+    font-size: 38px;
+    font-family: "Lato-Bold";
+    color: rgb(241, 241, 241);
+    text-align: center;   
+}
+
+.contact-text {
+    width: 32%;
+    font-size: 21px;
+    font-family: "Lato-Regular";
+    color: rgb(152, 160, 165);
+    text-align: center;  
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    margin: 60px 0 20px 0;
+}
+
+.form-name {
+    width: 350px;
+    height: 54px;
+    padding-left: 10px;
+    outline: none;
+    border: 2px solid #e9eef2;
+    border-radius: 2px;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    font-size: 17px;
+    font-family: "Lato-Regular";
+    color: rgb(233, 238, 242);
+    text-align: left;  
+}
+
+.form-email {
+    width: 350px;
+    height: 54px;
+    margin: 20px 0;
+    padding-left: 10px;
+    outline: none;
+    border: 2px solid #e9eef2;
+    border-radius: 2px;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    font-size: 17px;
+    font-family: "Lato-Regular";
+    color: rgb(233, 238, 242);
+    text-align: left;  
+}
+
+.form-subject {
+    width: 350px;
+    height: 80px;
+    padding: 0 0 30px 10px;
+    outline: none;
+    border: 2px solid #e9eef2;
+    border-radius: 2px;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    font-size: 17px;
+    font-family: "Lato-Regular";
+    color: rgb(233, 238, 242);
+    text-align: left;  
+}
+
+.form-submit {
+    width: 350px;
+    height: 54px;
+    margin: 20px 0;
+    padding-left: 10px;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 2px;
+    font-size: 17px;
+    font-family: "Lato-Regular";
+    color: #2d3035;
+    background-color: #a4b9be;
+    text-align: center;  
+}
+
+/*СОЦ СЕТИ*/
+
+.contact-social-icon {
+    margin: 0 0 60px 0;
+}
+
+.social-icon-link {
+    margin: 0 2px 0 2px;
+    text-decoration: none;
+}
+
+/*ПОДВАЛ*/
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    height: 120px;
+    width: 100%;
+}
+
+
+.footer-list {
+    display: flex;
+    list-style: none;
+}
+
+.footer-list-item {
+    margin: 0 15px;
+}
+
+.footer-list-item-link {
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "Lato-Regular";
+    color: rgb(83, 90, 94);
+    font-weight: bold;
+}
+
+.copyright {
+    font-size: 16px;
+    font-family: "Lato-Regular";
+    color: rgb(83, 90, 94);
+    text-align: center;      
+}
